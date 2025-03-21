@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ISAEK OMHROS CHATROOM LOGIN</title>
+    <title>ISAEK OMHROS LOGIN</title>
 </head>
 <body>
     <div class="cont-1">
     <a href="login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
-    <h2 class="header">ΙΣΑΕΚ CHATROOM</h2>
+    <h2 class="header">ΙΣΑΕΚ LOGIN</h2>
         <div class="cont-2">
             <div class="cont-3">
                 <div class="cont-4">
