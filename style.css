@@ -1,0 +1,141 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: monospace;
+    background: rgb(16,197,134);
+    background: linear-gradient(90deg, rgba(16,197,134,1) 11%, rgba(49,168,189,1) 66%, rgba(8,130,155,1) 100%);
+}
+table tr td
+{
+    border-collapse: collapse;
+    line-height: 40px;
+}
+.cont-1
+{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cont-2
+{
+    display: table;
+    background: rgb(76,218,169);
+    background: linear-gradient(90deg, rgba(76,218,169,1) 11%, rgba(118,217,234,1) 66%, rgba(0,212,255,1) 100%);
+    color: white;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    font-size: 21px;
+    border: 3px solid white;
+}
+.cont-3
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 300px;
+}
+.cont-4
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+img
+{
+    border: 3px solid white;
+    margin-top: 30px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.header
+{
+    font-size: 35px;
+    color: white;
+}
+.register
+{
+    width: 100px;
+    height: 30px;
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 11%, rgba(118,217,234,1) 66%,rgba(76,218,169,1) 100%);
+    color: white;
+    border: 3px solid white;
+    font-family: monospace;
+    font-size: large;
+    border-radius: 4px;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.register:hover
+{
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgb(17, 146, 172) 11%, rgb(84, 157, 169) 66%,rgb(48, 134, 104) 100%);
+}
+.alert
+{
+    margin-top: 10px;
+    width: 300px;
+    background: rgb(197,16,16);
+    background: linear-gradient(90deg, rgba(197,16,16,1) 14%, rgba(188,41,41,1) 53%, rgba(211,42,42,1) 100%);
+    text-align: center; 
+    font-size: 15px;
+}
+.success
+{
+    margin-top: 10px;
+    width: 300px;
+    background: rgb(67,203,60);
+    background: radial-gradient(circle, rgba(67,203,60,1) 14%, rgba(51,208,46,1) 54%, rgba(42,211,96,1) 81%);
+    text-align: center; 
+    font-size: 15px;
+}
+#login
+{
+    width: 60px;
+    height: 30px;
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 11%, rgba(118,217,234,1) 66%,rgba(76,218,169,1) 100%);
+    color: white;
+    border: 3px solid white;
+    font-family: monospace;
+    font-size: large;
+    float: right;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#login:hover
+{
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgb(17, 146, 172) 11%, rgb(84, 157, 169) 66%,rgb(48, 134, 104) 100%);
+}
+#register
+{
+    width: 100px;
+    height: 30px;
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgba(76,218,169,1) 11%, rgba(118,217,234,1) 66%, rgba(0,212,255,1) 100%);
+    color: white;
+    border: 3px solid white;
+    font-family: monospace;
+    font-size: large;
+    border-radius: 4px;
+}
+#register:hover
+{
+    background: rgb(84,76,218);
+    background: linear-gradient(90deg, rgb(17, 146, 172) 11%, rgb(84, 157, 169) 66%,rgb(48, 134, 104) 100%);
+}
+#pass
+{
+    font-family: monospace;
+}
+#usr
+{
+    font-family: monospace;
+    font-weight: bold;
+}
