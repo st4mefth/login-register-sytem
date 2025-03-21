@@ -8,6 +8,13 @@ Included:
   4. All Errors Are Shown
 
 TEST USER:
-
-    Username: admin
-    Password: admin
+    Username: 
+    
+    admin
+    
+    
+    
+    Password: 
+  
+  
+  admin
