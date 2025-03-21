@@ -9,7 +9,7 @@
 <body>
     <div class="cont-1">
     <a href="login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
-    <h2 class="header">ΙΣΑΕΚ LOGIN</h2>
+    <h2 class="header">ISAEK LOGIN</h2>
         <div class="cont-2">
             <div class="cont-3">
                 <div class="cont-4">
