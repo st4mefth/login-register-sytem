@@ -1,6 +1,8 @@
 # login-register-sytem
 A login and register system with PHP, HTML, CSS and SQL
 
+![Image](https://github.com/user-attachments/assets/c4454d2c-2dc7-40e6-bfe4-d9f491195313)
+
 Included:
   1. User's Password Match Confirmation
   2. Password Decryption
