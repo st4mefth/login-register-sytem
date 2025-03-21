@@ -8,11 +8,14 @@
 </head>
 <body>
     <div class="cont-1">
-    <a href="http://127.0.0.1/ChatRoom/login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
+    <a href="login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
     <h2 class="header">ΙΣΑΕΚ CHATROOM</h2>
         <div class="cont-2">
             <div class="cont-3">
                 <div class="cont-4">
+
+                    <!-- LOGIN FORM -->
+                    
                     <form method="post" action="login.php">
                         <table>
                             <tr>
@@ -30,6 +33,8 @@
                             <?php
                                 include("config.php");
 
+                                //USER LOGIN CHECK//
+
                                 if(isset($_POST['login']))
                                 {
                                     $usr = $_POST['usr'];
@@ -37,18 +42,25 @@
 
                                     require_once "config.php";
 
+                                    //DB SEARCH FOR THE USER//
+
                                     $sql = "select * from usrs where usr = '$usr'";
                                     $result = mysqli_query($conn, $sql);
                                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
+                                    //ERRORS//
+
                                     $errors = array();
+
+                                    //USER'S PASSWORD CONFIRMATION//
 
                                     if($row)
                                     {
                                         if(password_verify($pass, $row['pass']))
                                         session_start();
                                         $_SESSION['usr'] = "yes";
-                                        header("Location: chatroom.php");
+                                        //IF USER AND PASSWORD ARE CORRECT GO TO THE EXACT LINK//
+                                        header("Location: <yourwebsite.php");
                                         die();
                                     }
                                     else
