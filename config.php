@@ -1,5 +1,7 @@
 <?php
 
+    //DATABASE CONFIGURATION//
+
     session_start();
 
     $host = "<DATABASE NAME>";
