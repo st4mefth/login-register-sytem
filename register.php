@@ -13,6 +13,9 @@
         <div class="cont-2">
             <div class="cont-3">
                 <div class="cont-4">
+
+                    <!-- REGISTER FORM -->
+                    
                     <form method="post" action="register.php">
                         <table>
                             <tr>
@@ -33,21 +36,31 @@
                             <?php
                                 include("config.php");
 
+                                //GETTING DATA FROM THE FORM//
+
                                 if(isset($_POST['register']))
                                 {
                                     $usr = $_POST['usr'];
                                     $pass = $_POST['pass'];
                                     $confirm = $_POST['confirm'];
 
+                                    //PASS DECRYPRION//
+                                    
                                     $pass_hash = password_hash($pass, PASSWORD_DEFAULT);
+
+                                    //ERRORS//
 
                                     $errors = array();
 
+                                    //USERNAME OR PASSWORD CAN'T BE EMPTY//
+                                    
                                     if(empty($usr) OR empty($pass) OR empty($confirm))
                                     {
                                         array_push($errors, "Please Make Sure That All Fields Are Mandantory!");
                                     }
 
+                                    //CHECKING IN THE DATABASE IF THE USERNAME ALREADY EXISTS//
+                                    
                                     $sql = "select * from usrs where usr = '$usr'";
 
                                     if($result = mysqli_query($conn, $sql))
@@ -58,15 +71,21 @@
                                         }
                                     }
 
+                                    //CHECK IF PASSWORD IS AT LEAST 6 CHARACTERS LONG//
+
                                     if(strlen($pass)<6)
                                     {
                                         array_push($errors, "Password Must Be At Least 6 Characters Long.");
                                     }
 
+                                    //CHECKING IF THE PASSWORD IS CONFIRMED//
+
                                     if($pass !== $confirm)
                                     {
                                         array_push($errors, "Password Does Not Match!");
                                     }
+
+                                    //SHOWING THE ERRORS
                     
                                     if(count($errors) > 0)
                                     {
@@ -75,6 +94,9 @@
                                             echo "<div class='alert'>$error</div>";
                                         }
                                     }
+
+                                    //INSERTING DATA TO THE TABLE
+                                    
                                     else
                                     {
                                         require_once "config.php";
@@ -82,12 +104,17 @@
                                         $stmt = mysqli_stmt_init($conn);
                                         $prepare = mysqli_stmt_prepare($stmt, $insert);
 
+                                        //CHECKING IF THE REGISTER IS SUCCESSFUL//
+
                                         if($prepare)
                                         {
                                             mysqli_stmt_bind_param($stmt, "ss", $usr, $pass_hash);
                                             mysqli_stmt_execute($stmt);
                                             echo "<div class='success'>You Are Successfully Registered! Click <a href='login.php'>Here</a> To Login!</div>";
                                         }
+
+                                        //ERRORS//
+                                        
                                         else
                                         {
                                             echo "<div class='alert'>Something Went Wrong :(</div>";
