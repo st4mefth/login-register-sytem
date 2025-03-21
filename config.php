@@ -5,7 +5,7 @@
     $host = "<DATABASE NAME>";
     $user = "<DB USERNAME>";
     $password = "<DB PASSWORD";
-    $dbname = "<DB NAME>";
+    $dbname = "iek_usrs";
 
     //DATABASE CONNECT//
 
