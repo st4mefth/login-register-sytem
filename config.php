@@ -2,12 +2,16 @@
 
     session_start();
 
-    $host = "localhost";
-    $user = "root";
-    $password = "";
-    $dbname = "iek_usrs";
+    $host = "<DATABASE NAME>";
+    $user = "<DB USERNAME>";
+    $password = "<DB PASSWORD";
+    $dbname = "<DB NAME>";
+
+    //DATABASE CONNECT//
 
     $conn = mysqli_connect($host, $user, $password, $dbname);
+
+    //ERRORS//
 
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
