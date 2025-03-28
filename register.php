@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="cont-1">
-    <a href="http://127.0.0.1/ChatRoom/login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
+    <a href="login.php"><img src="assets/omhros.png" alt="OMHROS IMAGE"></a>
     <h2 class="header">ISAEK REGISTER</h2>
         <div class="cont-2">
             <div class="cont-3">
